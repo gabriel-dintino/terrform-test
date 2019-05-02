@@ -1,0 +1,16 @@
+/*module "security-group_http-80" {
+  source  = "terraform-aws-modules/security-group/aws//modules/http-80"
+  version = "2.17.0"
+
+  # insert the 2 required variables here
+  name                = "security-group-terraform"
+  vpc_id              = "${aws_default_vpc.default.id}"
+}
+/*
+
+resource "aws_default_vpc" "default" {
+  tags = {
+    Name = "Default VPC"
+  }
+}
+*/
